@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  font-family: 'poppins';
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color:#5390d9;
+    color: white;
+    
+}
+/*navbar-- 
+        --start*/
+        .navbar{
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            width:100%;
+            height: 70px;
+            position:fixed;
+            top: 0;
+            left: 0;
+            z-index:1000;
+            
+            background-color: #0d6efd;
+            
+            
+          }
+          .navbar a{
+            text-decoration: none;
+            padding: 5px 15px;
+            font-size: 18px;
+            color: white;
+          
+          }
+          .logo img{
+            width: 100px;
+            height: 50px;
+          }
+          
+          @media screen and (max-width: 700px) {
+            .navbar{
+              display: flex;
+              align-items: center;
+              justify-content:space-between;
+              width:100%;
+              height: 70px;
+              position:fixed;
+              top: 0;
+              left: 0;
+              z-index:1000;
+              overflow: hidden;
+          
+              background-color: #0d6efd;
+             
+              
+            }
+            .navbar a{
+              text-decoration: none;
+              padding: 5px 15px;
+              font-size: 16px;
+              color: white;
+          
+            
+            }
+            .logo img{
+              width: 80px;
+              height: 50px;
+            }
+            
+          
+          }
+          
+          
+          .navbar a:hover {
+            color: #ffffff; 
+            transform: scaleX(1.05);
+            transition: all 0.5s;
+           
+            font-size: 17px;
+          }
+          
+/*navbar----
+        --end*/          
+.heading{
+    text-align: center;
+    color:black;
+    
+}
+.search{
+    display: flex;
+    justify-content: center;
+}
+.search .input{
+    border:1px solid black;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding: 20px 45px 20px 15px;
+    font-size: 32px;
+}
+.search .icon{
+    border:1px solid black;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-left: none;
+    padding: 20px 20px 20px 20px;
+    font-size: 32px;
+    background-color:white;
+}
+.weather {
+    display: none;
+    flex-direction:row;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    
+    
+}
+
+.weather1,
+.weather2,.weather3,.weather4 {
+
+    justify-content: center;
+    width: 15%;
+    height: auto;
+    padding-top: 20px;
+    margin: 10px;
+    text-align: center;
+    color: black;
+    background-color: white;
+   
+}
+.image{
+  width: 70px;
+  height: 70px;
+}
+
+/*for all innner font sizes are same*/
+.weather1 .cityname{
+  font-size: 25px;
+}
+
+.weather1 .temparature{
+  font-size: 32px;
+  padding: 5px;
+}
+.weather1 .forepress span{
+  font-size: 18px;
+  padding-right: 5px;
+  
+}
+/*weather 2*/
+.weather2 .cityname{
+  font-size: 25px;
+}
+
+.weather2 .temparature{
+  font-size: 32px;
+  padding: 5px;
+}
+.weather2 .forepress span{
+  font-size: 18px;
+  padding-right: 5px;
+  
+}
+/*weather 3*/
+.weather3 .cityname{
+  font-size: 25px;
+}
+
+.weather3 .temparature{
+  font-size: 32px;
+  padding: 5px;
+}
+.weather3 .forepress span{
+  font-size: 18px;
+  padding-right: 5px;
+  
+}
+/*weather 4*/
+.weather4 .cityname{
+  font-size: 25px;
+}
+
+.weather4 .temparature{
+  font-size: 32px;
+  padding: 5px;
+}
+.weather4 .forepress span{
+  font-size: 18px;
+  padding-right: 5px;
+  
+}
+
+
+h3{
+    color: black;
+}
+.suggestion h1,h2{
+  display:flex;
+  color: white;
+  justify-content: center;
+
+}
+.umbrella{
+  padding-top: 7px;
+}
+.running{
+  padding-top: 7px;
+}
+.stroke{
+  padding-top: 7px;
+}
+.droplet{
+  padding-top: 7px;
+}
+.glasses{
+  padding-top: 7px;
+}
+.cool{
+  padding-top: 7px;
+}
+.hygenic{
+  padding-top: 7px;
+}
+/*--footer---
+        ---start--*/
+        footer{
+            width: 100%;
+            background-color: #0d6efd;
+            height: 250px;
+            border-top-right-radius: 50%;
+            display: flex;
+            font-family: 'Poppins', sans-serif;
+        
+            
+          }
+          footer div{
+            display: block;
+            flex-basis: 12%;
+            margin-left: 5%;
+            margin-top: 1%;
+          
+          }
+          footer div:first-child{
+            margin-left:15%;
+          }
+          footer div p{
+            color:black;
+            font-size: 20px;
+            border-bottom: 2px solid white;
+            max-width: 110px;
+            
+          }
+          footer div a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            padding: 4px 4px;
+        
+            
+          }
+          .followus .followussub{
+            display: flex;
+          
+          }
+          .followussub i{
+            font-size: 25px;
+            padding: 5px;
+            color: white;
+         
+            
+          }
+          .followussub i:hover{
+            transform: scale(1.05);
+          }
+          footer div a:hover{
+            
+            transform: scale(1.05);
+            
+          }
+          @media only screen and (max-width: 900px) {
+            footer div p{
+                color:black;
+                font-size: 17px;
+                border-bottom: 2px solid white;
+                max-width: 110px;
+                
+              }
+              footer div a{
+                display: block;
+                text-decoration: none;
+                color: white;
+                font-size: 13px;
+                padding: 4px 4px;
+                
+              }
+              .followussub i{
+                font-size: 21px;
+                padding: 4px;
+                color: white;
+              }
+              footer div{
+                display: block;
+                flex-basis: 10%;
+                margin-left: 3%;
+                margin-top: 1%;
+              }
+              footer div:first-child{
+                margin-left:10%;
+              }
+              
+        }
+        @media only screen and (max-width: 700px){
+            footer div:first-child{
+                margin-left:5%;
+              }
+        
+        }
+        /*--foooter--
+                --end--*/        

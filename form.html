@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>mini project</title>
+    
+</head>
+<body>
+    
+    <div class="container">
+        <img src="container1.jpg" alt="image" >
+    </div>
+        <div class="welcomemsg">
+            <h1>Welcome To Live Weather Forecasting System!</h1>
+        </div>
+        <div class="search">
+            <button class="login1" onclick="loginformdisplayf()">Login<!--&nbsp;<i class="fa-solid fa-arrow-right"></i>--></button>
+        </div>
+        <div class="section">
+         <span><h2 style='text-align:justify;color: #1C3554ff;'>Login Form</h2></span><i class="fa-solid fa-xmark Xmark" onclick="closeloginf()"></i>
+         <p id="emailwarning"></p>
+         <input type="email" id="email" placeholder="Email" name="email_id" autocomplete="off">
+       <br><br>
+         <P id="passwordwarning"></P>
+         <input type="password" id="password" placeholder="password" name="password"  autocomplete="off">
+         <br><br>
+         <input type="checkbox" id="checkbox" name="checkbox"><span>Remember me&emsp;&emsp;<br>
+         <br>
+         <button class="submitbtn" >Submit</button>
+         <br>
+         <br>
+        </div>
+        
+        <script src="form.js"></script>
+</body>
+</html>
